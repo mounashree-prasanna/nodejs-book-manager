@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f9; 
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.heading {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+.actions-container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+}
+
+.books-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.books-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.books-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.books-table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.books-table tr:hover {
+    background-color: #eaf2f8;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px; 
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+
+label {
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+    min-width: 80px; 
+    color: #2c3e50;
+}

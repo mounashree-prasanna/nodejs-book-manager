@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Book Store App</h1>
+    </div>
+
+    <h2>List of All Books</h2>
+    <table class="books-table">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% books.forEach(function(book){ %>
+            <tr>
+            <td><%= book.BookID %></td>
+            <td><%= book.Title %></td>
+            <td><%= book.Author %></td>
+            <td>
+                <a href="/update-book/<%= book.BookID %>">
+                <button>Update</button>
+                </a>
+            </td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Update User -->
+    <div class="actions-container">
+        <a href="/add-book">
+            <button>Add Book</button>
+        </a>
+
+        <!-- Update User
+        <a href="/update-book">
+            <button>Update Book</button>
+        </a> -->
+
+        <!-- Delete User -->
+        <a href="/delete-book">
+            <button>Delete Book</button>
+        </a>
+    </div>
+</body>
+
+</html>
